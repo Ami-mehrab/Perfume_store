@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <rect width="800" height="800" fill="#f4f4f5"/>
+        <rect x="250" y="220" width="300" height="390" rx="16" fill="#fffbda" stroke="#af9c7b" stroke-width="8"/>
+    <rect x="320" y="90" width="160" height="140" rx="10" fill="#c8b594"/>
+    <circle cx="400" cy="150" r="28" fill="#d7c4a3"/>
+    <text x="400" y="430" text-anchor="middle" fill="#af9c7b" font-size="22" font-family="Georgia, serif">Fleur de Sel</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <rect width="800" height="800" fill="#f4f4f5"/>
+        <rect x="250" y="220" width="300" height="390" rx="16" fill="#ffe891" stroke="#b88932" stroke-width="8"/>
+    <rect x="320" y="90" width="160" height="140" rx="10" fill="#d1a24b"/>
+    <circle cx="400" cy="150" r="28" fill="#e0b15a"/>
+    <text x="400" y="430" text-anchor="middle" fill="#b88932" font-size="22" font-family="Georgia, serif">Citrus Veil</text>
+</svg>

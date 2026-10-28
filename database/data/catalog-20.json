@@ -1,0 +1,1711 @@
+{
+  "schema_version": "1.1",
+  "title": "Bangladesh Perfume Store: Website Research and 20-Product Bilingual Catalog",
+  "research_date": "2026-10-26",
+  "timezone": "Asia/Dhaka",
+  "locale_codes": [
+    "en",
+    "bn"
+  ],
+  "currency": "BDT",
+  "catalog_scope": "International-brand perfumes listed by Bangladesh retailers; a proposed starter selection, not a verified national sales ranking.",
+  "user_requirements": {
+    "full_site_bangla_english": true,
+    "initial_product_count": 20,
+    "required_brand_examples": [
+      "Dior",
+      "Rasasi"
+    ],
+    "required_products": [
+      "Dior Sauvage",
+      "Rasasi Hawas for Him",
+      "Rasasi Hawas Ice"
+    ],
+    "meaning_of_hawais": "Interpreted as Rasasi Hawas.",
+    "primary_public_frontend_reference": "https://perfumecenter.com.bd/"
+  },
+  "research_limits": [
+    "Reviewed public homepage navigation, catalog content, product pages and displayed delivery information. No purchases, payment submissions, authenticity audit, mobile performance benchmark or admin access.",
+    "Web retrieval can contain cached pages. Prices are retailer reference observations collected during this research and must be rechecked before commercial use.",
+    "Retailer stock, reviews, sales counts, authenticity claims, shipping rules and photography are not imported as this store's own data.",
+    "Fragrance descriptions are original short English/Bangla paraphrases. Key notes are retailer-referenced highlights, not complete ingredient lists or manufacturer-verified pyramids."
+  ],
+  "website_benchmarks": [
+    {
+      "name": "Sundora",
+      "url": "https://sundora.com.bd/",
+      "observed": [
+        "Brands A–Z and featured-brand navigation",
+        "Fragrance families, concentration and gender categories",
+        "Gift shopping by budget and store locator"
+      ],
+      "recommended_application": [
+        "A focused brand directory and fragrance-family filters",
+        "Product identity and concentration displayed clearly",
+        "A compact navigation sized for a 20-product launch"
+      ],
+      "evidence_urls": [
+        "https://sundora.com.bd/",
+        "https://sundora.com.bd/products/asad"
+      ]
+    },
+    {
+      "name": "Perfume Shop Bangladesh",
+      "url": "https://perfumeshop.com.bd/",
+      "observed": [
+        "Budget-shopping sections, brands directory and best-seller sections",
+        "Product pages place delivery estimates and charges close to purchase controls",
+        "Hawas Ice page contains English and Bangla descriptive content"
+      ],
+      "recommended_application": [
+        "Shop-by-budget shortcuts",
+        "Address-dependent delivery information beside checkout controls",
+        "A complete EN/BN interface with translated navigation, product content, checkout and notifications"
+      ],
+      "evidence_urls": [
+        "https://perfumeshop.com.bd/",
+        "https://perfumeshop.com.bd/shop/rasasi-hawas-ice/"
+      ]
+    },
+    {
+      "name": "FragranceBD",
+      "url": "https://fragrancebd.com/",
+      "observed": [
+        "Recent products, best sellers, recommendations and sale sections",
+        "Product detail pages show fragrance notes and bottle options"
+      ],
+      "recommended_application": [
+        "Curated featured/new-arrival sections driven by admin settings",
+        "A compact scent profile and key-note section",
+        "Clearly priced, selectable bottle variants"
+      ],
+      "evidence_urls": [
+        "https://fragrancebd.com/",
+        "https://fragrancebd.com/product/bleu-de-chanel-edp/"
+      ]
+    },
+    {
+      "name": "Buy Perfume in Bangladesh (BPIB)",
+      "url": "https://buyperfumeinbangladesh.com/",
+      "observed": [
+        "Full bottles, decants, atomizers and gift sets",
+        "Individual product pages list full-bottle and decant offerings",
+        "Some decant ordering instructions use a 1 ml variation multiplied by quantity"
+      ],
+      "recommended_application": [
+        "Separate explicit full-bottle and decant purchase formats if decants are sold",
+        "Use direct 5 ml/10 ml options with their own price and inventory rules",
+        "Show a clear selected-format price and avoid presenting a decant starting price as a full-bottle price"
+      ],
+      "evidence_urls": [
+        "https://buyperfumeinbangladesh.com/",
+        "https://buyperfumeinbangladesh.com/product/rasasi-hawas-edp-men/"
+      ]
+    }
+  ],
+  "recommended_storefront": {
+    "positioning": "A focused premium perfume store with simple local shopping.",
+    "visual_direction": "Perfume Center-inspired white/light-gray surfaces, charcoal text, deep magenta accents, rounded cards, restrained shadows and consistent supplier-approved bottle photography.",
+    "primary_navigation": [
+      "Home",
+      "Shop",
+      "Brands",
+      "Men",
+      "Women",
+      "Unisex",
+      "Offers"
+    ],
+    "homepage_sections": [
+      "Compact header with own logo, populated categories, search, account, cart and EN/BN switch",
+      "Wide editable promotional banner",
+      "Image-based category tiles linked to populated collections",
+      "New arrivals",
+      "Featured or evidence-based best sellers",
+      "Trending or curated perfumes",
+      "Genuine customer reviews when available",
+      "Merchant-specific service information",
+      "Editable multi-column footer"
+    ],
+    "catalog_filters": [
+      "Brand",
+      "Audience",
+      "Price",
+      "Concentration",
+      "Bottle size",
+      "Scent family",
+      "Availability",
+      "Purchase format if decants are offered"
+    ],
+    "product_page": [
+      "Gallery",
+      "Canonical product name and optional Bangla display name",
+      "Concentration and selected size",
+      "Selling price for the exact selected variant",
+      "Own-store availability",
+      "Original localized description",
+      "Scent profile and key notes",
+      "Shipping estimate based on destination",
+      "Returns policy",
+      "Related products"
+    ],
+    "mobile_requirements": [
+      "Visible search",
+      "Accessible filter drawer",
+      "Clear size selection",
+      "Sticky purchase controls where useful",
+      "Fast image loading",
+      "Readable Bangla without truncation"
+    ],
+    "trust_content": "Publish the merchant's real sourcing, shipping and return policies. Only label an actual verified purchase as a verified review.",
+    "primary_frontend_reference": "https://perfumecenter.com.bd/"
+  },
+  "bilingual_implementation": {
+    "default_locale": "en",
+    "routes": [
+      "/en",
+      "/bn",
+      "/en/products/{slug}",
+      "/bn/products/{slug}"
+    ],
+    "product_identity": "Exactly 20 product records, each holding both translations. Both languages share a product ID, variant SKUs, stock, prices, cart and orders.",
+    "fields_to_localize": [
+      "Product display names",
+      "Descriptions",
+      "Scent profiles and notes",
+      "Categories and filters",
+      "Banners",
+      "SEO metadata",
+      "Shipping and return policies",
+      "Cart and checkout labels",
+      "Validation errors",
+      "Order status labels",
+      "Emails and notifications"
+    ],
+    "canonical_names": "Retain canonical English brand and fragrance names in both languages; Bangla transliterations supplement recognition and search.",
+    "language_switch": "Preserve the current product/page, selected variant, cart and checkout session when switching languages; persist preference.",
+    "search": "Match English, Bangla and aliases; normalize Bengali/ASCII digits and Unicode consistently. Recognize Hawas, Hawais, হাওয়াস and common transliterations.",
+    "seo": "Render localized public content in initial HTML; set html lang to en or bn; give localized pages separate canonical URLs and reciprocal hreflang links.",
+    "formatting": "Format BDT using the active locale (en-BD/bn-BD). Keep EDP/EDT and SKUs stable. Normalize phone numbers and numeric input before validation.",
+    "typography": "Use a Bengali-capable typeface and test wrapping, line height, prices, mobile controls and checkout errors in both languages.",
+    "translation_quality": "Store editable authored translations. Require both languages before publication; use fallback only as an explicitly defined temporary behavior."
+  },
+  "interface_translations": {
+    "en": {
+      "home": "Home",
+      "shop": "Shop",
+      "brands": "Brands",
+      "men": "Men",
+      "women": "Women",
+      "unisex": "Unisex",
+      "offers": "Offers",
+      "search_placeholder": "Search perfumes or brands",
+      "cart": "Cart",
+      "wishlist": "Wishlist",
+      "add_to_cart": "Add to cart",
+      "buy_now": "Buy now",
+      "select_size": "Select size",
+      "full_bottle": "Full bottle",
+      "decant": "Decant",
+      "in_stock": "In stock",
+      "out_of_stock": "Out of stock",
+      "price": "Price",
+      "quantity": "Quantity",
+      "checkout": "Checkout",
+      "subtotal": "Subtotal",
+      "delivery_charge": "Delivery charge",
+      "total": "Total",
+      "cash_on_delivery": "Cash on delivery",
+      "online_payment": "Online payment",
+      "full_name": "Full name",
+      "phone": "Mobile number",
+      "address": "Delivery address",
+      "district": "District",
+      "order_history": "Order history",
+      "track_order": "Track order",
+      "order_confirmed": "Order confirmed",
+      "payment_failed": "Payment failed",
+      "try_again": "Try again",
+      "stock_insufficient": "The selected quantity is unavailable.",
+      "free_shipping_remaining": "Add {amount} more for free delivery.",
+      "language": "Language"
+    },
+    "bn": {
+      "home": "হোম",
+      "shop": "কেনাকাটা",
+      "brands": "ব্র্যান্ড",
+      "men": "পুরুষ",
+      "women": "নারী",
+      "unisex": "ইউনিসেক্স",
+      "offers": "অফার",
+      "search_placeholder": "পারফিউম বা ব্র্যান্ড খুঁজুন",
+      "cart": "কার্ট",
+      "wishlist": "পছন্দের তালিকা",
+      "add_to_cart": "কার্টে যোগ করুন",
+      "buy_now": "এখনই কিনুন",
+      "select_size": "সাইজ নির্বাচন করুন",
+      "full_bottle": "সম্পূর্ণ বোতল",
+      "decant": "ডিক্যান্ট",
+      "in_stock": "স্টকে আছে",
+      "out_of_stock": "স্টকে নেই",
+      "price": "দাম",
+      "quantity": "পরিমাণ",
+      "checkout": "চেকআউট",
+      "subtotal": "উপমোট",
+      "delivery_charge": "ডেলিভারি চার্জ",
+      "total": "মোট",
+      "cash_on_delivery": "ক্যাশ অন ডেলিভারি",
+      "online_payment": "অনলাইন পেমেন্ট",
+      "full_name": "পূর্ণ নাম",
+      "phone": "মোবাইল নম্বর",
+      "address": "ডেলিভারির ঠিকানা",
+      "district": "জেলা",
+      "order_history": "অর্ডারের ইতিহাস",
+      "track_order": "অর্ডার ট্র্যাক করুন",
+      "order_confirmed": "অর্ডার নিশ্চিত হয়েছে",
+      "payment_failed": "পেমেন্ট সম্পন্ন হয়নি",
+      "try_again": "আবার চেষ্টা করুন",
+      "stock_insufficient": "নির্বাচিত পরিমাণ স্টকে নেই।",
+      "free_shipping_remaining": "ফ্রি ডেলিভারি পেতে আরও {amount} টাকার পণ্য যোগ করুন।",
+      "language": "ভাষা"
+    }
+  },
+  "import_instructions": [
+    "Create one product per slug and store both locales on that record or related translation rows.",
+    "Create exactly one suggested full-bottle variant per product in this file. Additional sizes require independent source and supplier verification.",
+    "Import as draft with zero stock and null selling prices. Keep retailer reference prices in research metadata, not live price fields.",
+    "Skip already-existing slugs by default; repeated imports must not reset manually entered prices, stock, translations, orders or product edits.",
+    "Collect actual supplier-confirmed stock, selling prices and authorized product photographs before publication. image_path null explicitly means the product image remains to be supplied.",
+    "Reference ranges and unmapped prices must never be assigned to a particular size automatically.",
+    "The seed does not establish authenticity, authorized dealership, popularity rank or sales history."
+  ],
+  "products": [
+    {
+      "catalog_id": "BD-PF-001",
+      "slug": "dior-sauvage-edp",
+      "name": {
+        "en": "Dior Sauvage",
+        "bn": "ডিওর সাভাজ"
+      },
+      "brand": {
+        "en": "Dior",
+        "bn": "ডিওর"
+      },
+      "concentration": "EDP",
+      "audience": "men",
+      "description": {
+        "en": "Citrus freshness, peppery spice and a warm vanilla finish in a men's Eau de Parfum.",
+        "bn": "সিট্রাসের সতেজতা, গোলমরিচের মসলাযুক্ত ঘ্রাণ ও ভ্যানিলার উষ্ণ সমাপ্তি নিয়ে পুরুষদের ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Fresh spicy woody",
+        "bn": "ফ্রেশ, মসলাযুক্ত ও কাঠের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Bergamot",
+          "Sichuan pepper",
+          "Vanilla"
+        ],
+        "bn": [
+          "বার্গামট",
+          "সিচুয়ান গোলমরিচ",
+          "ভ্যানিলা"
+        ]
+      },
+      "search_aliases": [
+        "Dior Sauvage",
+        "ডিওর সাভাজ",
+        "Dior",
+        "ডিওর",
+        "Sauvage",
+        "সোভাজ",
+        "সাভাজ"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-001-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://fragrancebd.com/product/dior-sauvage-edp/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": null,
+        "price_range_bdt": [
+          18500,
+          18900
+        ],
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "100 ml refillable and gift-package options; exact option-to-price mapping not verified.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://fragrancebd.com/product/dior-sauvage-edp/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-002",
+      "slug": "dior-homme-intense-edp",
+      "name": {
+        "en": "Dior Homme Intense",
+        "bn": "ডিওর হোম ইনটেন্স"
+      },
+      "brand": {
+        "en": "Dior",
+        "bn": "ডিওর"
+      },
+      "concentration": "EDP",
+      "audience": "men",
+      "description": {
+        "en": "An iris-centered Eau de Parfum with lavender and a woody base for the men's collection.",
+        "bn": "ল্যাভেন্ডার ও কাঠের বেসের সঙ্গে আইরিসের ঘ্রাণপ্রধান পুরুষদের ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Iris woody",
+        "bn": "আইরিস ও কাঠের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Lavender",
+          "Iris",
+          "Cedar"
+        ],
+        "bn": [
+          "ল্যাভেন্ডার",
+          "আইরিস",
+          "সিডার"
+        ]
+      },
+      "search_aliases": [
+        "Dior Homme Intense",
+        "ডিওর হোম ইনটেন্স",
+        "Dior",
+        "ডিওর"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-002-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://fragrancebd.com/product/dior-homme-intense-edp/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 16500,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer page explicitly marked sold out.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://fragrancebd.com/product/dior-homme-intense-edp/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-003",
+      "slug": "rasasi-hawas-for-him-edp",
+      "name": {
+        "en": "Rasasi Hawas for Him",
+        "bn": "রাসাসি হাওয়াস ফর হিম"
+      },
+      "brand": {
+        "en": "Rasasi",
+        "bn": "রাসাসি"
+      },
+      "concentration": "EDP",
+      "audience": "men",
+      "description": {
+        "en": "A fresh aquatic men's fragrance with fruit, citrus and a warm ambery finish.",
+        "bn": "ফল ও সিট্রাসের সতেজতার সঙ্গে উষ্ণ অ্যাম্বারি সমাপ্তি নিয়ে পুরুষদের জলজ ঘ্রাণের পারফিউম।"
+      },
+      "scent_profile": {
+        "en": "Fresh fruity aquatic",
+        "bn": "সতেজ, ফলের ও জলজ ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Apple",
+          "Citrus",
+          "Ambergris"
+        ],
+        "bn": [
+          "আপেল",
+          "সিট্রাস",
+          "অ্যাম্বারগ্রিস"
+        ]
+      },
+      "search_aliases": [
+        "Rasasi Hawas for Him",
+        "রাসাসি হাওয়াস ফর হিম",
+        "Rasasi",
+        "রাসাসি",
+        "Hawas",
+        "Hawais",
+        "হাওয়াস",
+        "হাওয়াজ"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-003-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://perfumeshop.com.bd/shop/rasasi-hawas-men/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 2990,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Product-page price differed from some category/search results; research reference only.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://perfumeshop.com.bd/shop/rasasi-hawas-men/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-004",
+      "slug": "rasasi-hawas-ice-edp",
+      "name": {
+        "en": "Rasasi Hawas Ice",
+        "bn": "রাসাসি হাওয়াস আইস"
+      },
+      "brand": {
+        "en": "Rasasi",
+        "bn": "রাসাসি"
+      },
+      "concentration": "EDP",
+      "audience": "men",
+      "description": {
+        "en": "A citrus-fruity take on the Hawas line with an aquatic character and musky dry-down.",
+        "bn": "সিট্রাস ও ফলের ঘ্রাণের সঙ্গে জলজ চরিত্র এবং মাস্কের সমাপ্তি নিয়ে হাওয়াস সিরিজের একটি ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Fresh citrus aquatic",
+        "bn": "সতেজ সিট্রাস ও জলজ ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Apple",
+          "Bergamot",
+          "Musk"
+        ],
+        "bn": [
+          "আপেল",
+          "বার্গামট",
+          "মাস্ক"
+        ]
+      },
+      "search_aliases": [
+        "Rasasi Hawas Ice",
+        "রাসাসি হাওয়াস আইস",
+        "Rasasi",
+        "রাসাসি",
+        "Hawas Ice",
+        "হাওয়াস আইস"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-004-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://perfumeshop.com.bd/shop/rasasi-hawas-ice/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 3100,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://perfumeshop.com.bd/shop/rasasi-hawas-ice/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-005",
+      "slug": "armaf-club-de-nuit-intense-man-edt",
+      "name": {
+        "en": "Armaf Club de Nuit Intense Man",
+        "bn": "আরমাফ ক্লাব দ্য নুই ইনটেন্স ম্যান"
+      },
+      "brand": {
+        "en": "Armaf",
+        "bn": "আরমাফ"
+      },
+      "concentration": "EDT",
+      "audience": "men",
+      "description": {
+        "en": "A men's Eau de Toilette combining bright fruit with smoky woods and a musky base.",
+        "bn": "উজ্জ্বল ফলের ঘ্রাণ, ধোঁয়াটে কাঠ ও মাস্কের বেসের সমন্বয়ে পুরুষদের ইডিটি।"
+      },
+      "scent_profile": {
+        "en": "Fruity smoky woody",
+        "bn": "ফলের, ধোঁয়াটে ও কাঠের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Lemon",
+          "Pineapple",
+          "Birch"
+        ],
+        "bn": [
+          "লেবু",
+          "আনারস",
+          "বার্চ"
+        ]
+      },
+      "search_aliases": [
+        "Armaf Club de Nuit Intense Man",
+        "আরমাফ ক্লাব দ্য নুই ইনটেন্স ম্যান",
+        "Armaf",
+        "আরমাফ",
+        "CDNIM",
+        "Club de Nuit",
+        "ক্লাব দ্য নুই"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-005-EDT-105",
+          "volume_ml": 105,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://buyperfumeinbangladesh.com/product/armaf-club-de-nuit-intense-man/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 4300,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://buyperfumeinbangladesh.com/product/armaf-club-de-nuit-intense-man/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-006",
+      "slug": "afnan-9-pm-edp",
+      "name": {
+        "en": "Afnan 9 PM",
+        "bn": "আফনান ৯ পিএম"
+      },
+      "brand": {
+        "en": "Afnan",
+        "bn": "আফনান"
+      },
+      "concentration": "EDP",
+      "audience": "men",
+      "description": {
+        "en": "A sweet aromatic men's Eau de Parfum with apple, spice and a vanilla-tonka base.",
+        "bn": "আপেল, মসলাযুক্ত ঘ্রাণ এবং ভ্যানিলা-টঙ্কার বেস নিয়ে মিষ্টি অ্যারোম্যাটিক পুরুষদের ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Sweet vanilla aromatic",
+        "bn": "মিষ্টি ভ্যানিলা ও অ্যারোম্যাটিক ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Apple",
+          "Cinnamon",
+          "Vanilla",
+          "Tonka bean"
+        ],
+        "bn": [
+          "আপেল",
+          "দারুচিনি",
+          "ভ্যানিলা",
+          "টঙ্কা বিন"
+        ]
+      },
+      "search_aliases": [
+        "Afnan 9 PM",
+        "আফনান ৯ পিএম",
+        "Afnan",
+        "আফনান",
+        "9pm",
+        "9 PM",
+        "৯ পিএম",
+        "নাইন পিএম"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-006-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://buyperfumeinbangladesh.com/product/afnan-9pm-edp-for-men/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 4350,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://buyperfumeinbangladesh.com/product/afnan-9pm-edp-for-men/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-007",
+      "slug": "lattafa-asad-edp",
+      "name": {
+        "en": "Lattafa Asad",
+        "bn": "লাতাফা আসাদ"
+      },
+      "brand": {
+        "en": "Lattafa",
+        "bn": "লাতাফা"
+      },
+      "concentration": "EDP",
+      "audience": "men",
+      "description": {
+        "en": "A warm men's Eau de Parfum with pepper, tobacco and coffee over an ambery vanilla base.",
+        "bn": "অ্যাম্বার-ভ্যানিলার বেসের সঙ্গে গোলমরিচ, তামাক ও কফির ঘ্রাণ নিয়ে উষ্ণ পুরুষদের ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Amber spicy",
+        "bn": "অ্যাম্বার ও মসলাযুক্ত ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Black pepper",
+          "Tobacco",
+          "Coffee",
+          "Vanilla"
+        ],
+        "bn": [
+          "কালো গোলমরিচ",
+          "তামাক",
+          "কফি",
+          "ভ্যানিলা"
+        ]
+      },
+      "search_aliases": [
+        "Lattafa Asad",
+        "লাতাফা আসাদ",
+        "Lattafa",
+        "লাতাফা",
+        "Asad",
+        "আসাদ"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-007-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://sundora.com.bd/products/asad",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 2380,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://sundora.com.bd/products/asad"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-008",
+      "slug": "lattafa-khamrah-edp",
+      "name": {
+        "en": "Lattafa Khamrah",
+        "bn": "লাতাফা খামরাহ"
+      },
+      "brand": {
+        "en": "Lattafa",
+        "bn": "লাতাফা"
+      },
+      "concentration": "EDP",
+      "audience": "unisex",
+      "description": {
+        "en": "A unisex Eau de Parfum pairing warm spices with sweet dates, praline and vanilla.",
+        "bn": "উষ্ণ মসলার সঙ্গে মিষ্টি খেজুর, প্রালিন ও ভ্যানিলার সমন্বয়ে নারী-পুরুষ সবার জন্য ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Sweet spicy gourmand",
+        "bn": "মিষ্টি, মসলাযুক্ত ও গুরমঁ ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Cinnamon",
+          "Dates",
+          "Praline",
+          "Vanilla"
+        ],
+        "bn": [
+          "দারুচিনি",
+          "খেজুর",
+          "প্রালিন",
+          "ভ্যানিলা"
+        ]
+      },
+      "search_aliases": [
+        "Lattafa Khamrah",
+        "লাতাফা খামরাহ",
+        "Lattafa",
+        "লাতাফা",
+        "Khamrah",
+        "খামরাহ",
+        "খামরা"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-008-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://perfumeshop.com.bd/shop/lattafa-khamrah/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 3650,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer page contains conflicting detailed note descriptions; key notes use its concise product summary.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://perfumeshop.com.bd/shop/lattafa-khamrah/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-009",
+      "slug": "lattafa-yara-edp",
+      "name": {
+        "en": "Lattafa Yara",
+        "bn": "লাতাফা ইয়ারা"
+      },
+      "brand": {
+        "en": "Lattafa",
+        "bn": "লাতাফা"
+      },
+      "concentration": "EDP",
+      "audience": "women",
+      "description": {
+        "en": "A women's Eau de Parfum with tropical fruit, soft florals and a vanilla-musky base.",
+        "bn": "ট্রপিক্যাল ফল, কোমল ফুলের ঘ্রাণ এবং ভ্যানিলা-মাস্কের বেস নিয়ে নারীদের ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Vanilla fruity floral",
+        "bn": "ভ্যানিলা, ফলের ও ফুলের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Tangerine",
+          "Orchid",
+          "Vanilla",
+          "Musk"
+        ],
+        "bn": [
+          "ট্যানজারিন",
+          "অর্কিড",
+          "ভ্যানিলা",
+          "মাস্ক"
+        ]
+      },
+      "search_aliases": [
+        "Lattafa Yara",
+        "লাতাফা ইয়ারা",
+        "Lattafa",
+        "লাতাফা",
+        "Yara",
+        "ইয়ারা",
+        "ইয়ারা"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-009-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://buyperfumeinbangladesh.com/product/lattafa-yara-edp-for-women/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 3100,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://buyperfumeinbangladesh.com/product/lattafa-yara-edp-for-women/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-010",
+      "slug": "versace-eros-edt",
+      "name": {
+        "en": "Versace Eros",
+        "bn": "ভারসাচে এরস"
+      },
+      "brand": {
+        "en": "Versace",
+        "bn": "ভারসাচে"
+      },
+      "concentration": "EDT",
+      "audience": "men",
+      "description": {
+        "en": "A men's Eau de Toilette with mint and green apple opening into a sweet vanilla base.",
+        "bn": "পুদিনা ও সবুজ আপেলের সতেজতার পর মিষ্টি ভ্যানিলার বেস নিয়ে পুরুষদের ইডিটি।"
+      },
+      "scent_profile": {
+        "en": "Fresh sweet aromatic",
+        "bn": "সতেজ, মিষ্টি ও অ্যারোম্যাটিক ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Mint",
+          "Green apple",
+          "Vanilla"
+        ],
+        "bn": [
+          "পুদিনা",
+          "সবুজ আপেল",
+          "ভ্যানিলা"
+        ]
+      },
+      "search_aliases": [
+        "Versace Eros",
+        "ভারসাচে এরস",
+        "Versace",
+        "ভারসাচে"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-010-EDT-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://buyperfumeinbangladesh.com/product/versace-eros-edt-for-men/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 8200,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://buyperfumeinbangladesh.com/product/versace-eros-edt-for-men/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-011",
+      "slug": "versace-dylan-blue-pour-homme-edt",
+      "name": {
+        "en": "Versace Dylan Blue Pour Homme",
+        "bn": "ভারসাচে ডিলান ব্লু পোর হোম"
+      },
+      "brand": {
+        "en": "Versace",
+        "bn": "ভারসাচে"
+      },
+      "concentration": "EDT",
+      "audience": "men",
+      "description": {
+        "en": "A fresh men's Eau de Toilette with citrus, aquatic elements and an aromatic woody finish.",
+        "bn": "সিট্রাস ও জলজ চরিত্রের সঙ্গে অ্যারোম্যাটিক কাঠের সমাপ্তি নিয়ে পুরুষদের সতেজ ইডিটি।"
+      },
+      "scent_profile": {
+        "en": "Fresh aromatic woody",
+        "bn": "সতেজ, অ্যারোম্যাটিক ও কাঠের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Bergamot",
+          "Grapefruit",
+          "Ambroxan",
+          "Incense"
+        ],
+        "bn": [
+          "বার্গামট",
+          "গ্রেপফ্রুট",
+          "অ্যামব্রক্সান",
+          "ধূপ"
+        ]
+      },
+      "search_aliases": [
+        "Versace Dylan Blue Pour Homme",
+        "ভারসাচে ডিলান ব্লু পোর হোম",
+        "Versace",
+        "ভারসাচে"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-011-EDT-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://buyperfumeinbangladesh.com/product/versace-pour-homme-dylan-blue-edt-for-men/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 8000,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://buyperfumeinbangladesh.com/product/versace-pour-homme-dylan-blue-edt-for-men/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-012",
+      "slug": "bleu-de-chanel-edp",
+      "name": {
+        "en": "Bleu de Chanel",
+        "bn": "ব্লু দ্য শানেল"
+      },
+      "brand": {
+        "en": "Chanel",
+        "bn": "শানেল"
+      },
+      "concentration": "EDP",
+      "audience": "men",
+      "description": {
+        "en": "A men's Eau de Parfum combining citrus brightness with aromatic spice and smooth woods.",
+        "bn": "সিট্রাসের উজ্জ্বলতা, অ্যারোম্যাটিক মসলা ও মসৃণ কাঠের ঘ্রাণের সমন্বয়ে পুরুষদের ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Citrus woody aromatic",
+        "bn": "সিট্রাস, কাঠের ও অ্যারোম্যাটিক ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Citrus",
+          "Ginger",
+          "Sandalwood"
+        ],
+        "bn": [
+          "সিট্রাস",
+          "আদা",
+          "চন্দন"
+        ]
+      },
+      "search_aliases": [
+        "Bleu de Chanel",
+        "ব্লু দ্য শানেল",
+        "Chanel",
+        "শানেল",
+        "Bleu de Chanel",
+        "Blue de Chanel",
+        "ব্লু শানেল",
+        "ব্লু দ্য শানেল"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-012-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://fragrancebd.com/product/bleu-de-chanel-edp/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": null,
+        "price_range_bdt": [
+          26500,
+          34500
+        ],
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists 100 ml and 150 ml; exact size-to-price mapping not verified.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://fragrancebd.com/product/bleu-de-chanel-edp/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-013",
+      "slug": "ysl-y-edp",
+      "name": {
+        "en": "Yves Saint Laurent Y",
+        "bn": "ইভ সাঁ লরাঁ ওয়াই"
+      },
+      "brand": {
+        "en": "Yves Saint Laurent",
+        "bn": "ইভ সাঁ লরাঁ"
+      },
+      "concentration": "EDP",
+      "audience": "men",
+      "description": {
+        "en": "An aromatic men's Eau de Parfum with apple and ginger followed by herbs and woody warmth.",
+        "bn": "আপেল ও আদার পর হার্বাল ঘ্রাণ এবং উষ্ণ কাঠের বেস নিয়ে অ্যারোম্যাটিক পুরুষদের ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Fresh aromatic woody",
+        "bn": "সতেজ, অ্যারোম্যাটিক ও কাঠের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Apple",
+          "Ginger",
+          "Sage",
+          "Cedar"
+        ],
+        "bn": [
+          "আপেল",
+          "আদা",
+          "সেইজ",
+          "সিডার"
+        ]
+      },
+      "search_aliases": [
+        "Yves Saint Laurent Y",
+        "ইভ সাঁ লরাঁ ওয়াই",
+        "Yves Saint Laurent",
+        "ইভ সাঁ লরাঁ",
+        "YSL Y",
+        "Y Eau de Parfum",
+        "ওয়াইএসএল ওয়াই"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-013-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://buyperfumeinbangladesh.com/product/yves-saint-laurent-ysl-y-edp-for-men/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 14300,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://buyperfumeinbangladesh.com/product/yves-saint-laurent-ysl-y-edp-for-men/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-014",
+      "slug": "armani-acqua-di-gio-edt",
+      "name": {
+        "en": "Giorgio Armani Acqua di Giò",
+        "bn": "জর্জিও আরমানি আকুয়া দি জিও"
+      },
+      "brand": {
+        "en": "Giorgio Armani",
+        "bn": "জর্জিও আরমানি"
+      },
+      "concentration": "EDT",
+      "audience": "men",
+      "description": {
+        "en": "A men's Eau de Toilette with citrus and marine freshness over a woody patchouli base.",
+        "bn": "সিট্রাস ও সামুদ্রিক সতেজতার সঙ্গে কাঠ ও প্যাচুলির বেস নিয়ে পুরুষদের ইডিটি।"
+      },
+      "scent_profile": {
+        "en": "Fresh citrus aquatic",
+        "bn": "সতেজ সিট্রাস ও জলজ ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Bergamot",
+          "Marine notes",
+          "Patchouli"
+        ],
+        "bn": [
+          "বার্গামট",
+          "সামুদ্রিক ঘ্রাণ",
+          "প্যাচুলি"
+        ]
+      },
+      "search_aliases": [
+        "Giorgio Armani Acqua di Giò",
+        "জর্জিও আরমানি আকুয়া দি জিও",
+        "Giorgio Armani",
+        "জর্জিও আরমানি",
+        "Acqua di Gio",
+        "Acqua di Giò",
+        "ADG",
+        "আকুয়া দি জিও"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-014-EDT-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://sundora.com.bd/products/acqua-di-gio-homme-edt",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 9860,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://sundora.com.bd/products/acqua-di-gio-homme-edt"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-015",
+      "slug": "davidoff-cool-water-men-edt",
+      "name": {
+        "en": "Davidoff Cool Water",
+        "bn": "ডেভিডফ কুল ওয়াটার"
+      },
+      "brand": {
+        "en": "Davidoff",
+        "bn": "ডেভিডফ"
+      },
+      "concentration": "EDT",
+      "audience": "men",
+      "description": {
+        "en": "A men's aquatic Eau de Toilette combining herbal freshness with a musky woody base.",
+        "bn": "হার্বাল সতেজতা এবং মাস্ক-কাঠের বেসের সমন্বয়ে পুরুষদের জলজ ঘ্রাণের ইডিটি।"
+      },
+      "scent_profile": {
+        "en": "Fresh aromatic aquatic",
+        "bn": "সতেজ, অ্যারোম্যাটিক ও জলজ ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Lavender",
+          "Mint",
+          "Marine notes",
+          "Musk"
+        ],
+        "bn": [
+          "ল্যাভেন্ডার",
+          "পুদিনা",
+          "সামুদ্রিক ঘ্রাণ",
+          "মাস্ক"
+        ]
+      },
+      "search_aliases": [
+        "Davidoff Cool Water",
+        "ডেভিডফ কুল ওয়াটার",
+        "Davidoff",
+        "ডেভিডফ"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-015-EDT-125",
+          "volume_ml": 125,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://buyperfumeinbangladesh.com/product/davidoff-cool-water-edt-for-men/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 3600,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://buyperfumeinbangladesh.com/product/davidoff-cool-water-edt-for-men/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-016",
+      "slug": "calvin-klein-ck-one-edt",
+      "name": {
+        "en": "Calvin Klein CK One",
+        "bn": "ক্যালভিন ক্লেইন সিকে ওয়ান"
+      },
+      "brand": {
+        "en": "Calvin Klein",
+        "bn": "ক্যালভিন ক্লেইন"
+      },
+      "concentration": "EDT",
+      "audience": "unisex",
+      "description": {
+        "en": "A unisex Eau de Toilette with light citrus freshness and a clean musky finish.",
+        "bn": "হালকা সিট্রাসের সতেজতা ও পরিচ্ছন্ন মাস্কের সমাপ্তি নিয়ে নারী-পুরুষ সবার জন্য ইডিটি।"
+      },
+      "scent_profile": {
+        "en": "Fresh citrus",
+        "bn": "সতেজ সিট্রাসের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Citrus",
+          "Green tea",
+          "Musk"
+        ],
+        "bn": [
+          "সিট্রাস",
+          "গ্রিন টি",
+          "মাস্ক"
+        ]
+      },
+      "search_aliases": [
+        "Calvin Klein CK One",
+        "ক্যালভিন ক্লেইন সিকে ওয়ান",
+        "Calvin Klein",
+        "ক্যালভিন ক্লেইন",
+        "CK One",
+        "CK1",
+        "সিকে ওয়ান"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-016-EDT-200",
+          "volume_ml": 200,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://perfumeshop.com.bd/shop/calvin-klein-ck-one/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": null,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": 3150,
+        "price_scope": "Retailer shows a single price and 100/200/300 ml sizes; exact size-to-price mapping not verified.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://perfumeshop.com.bd/shop/calvin-klein-ck-one/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-017",
+      "slug": "nautica-voyage-edt",
+      "name": {
+        "en": "Nautica Voyage",
+        "bn": "নটিকা ভয়েজ"
+      },
+      "brand": {
+        "en": "Nautica",
+        "bn": "নটিকা"
+      },
+      "concentration": "EDT",
+      "audience": "men",
+      "description": {
+        "en": "A fresh men's Eau de Toilette with apple, green leaves, watery florals and soft woods.",
+        "bn": "আপেল, সবুজ পাতা, জলজ ফুল ও কোমল কাঠের ঘ্রাণ নিয়ে পুরুষদের সতেজ ইডিটি।"
+      },
+      "scent_profile": {
+        "en": "Fresh green aquatic",
+        "bn": "সতেজ সবুজ ও জলজ ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Apple",
+          "Green leaves",
+          "Lotus",
+          "Musk"
+        ],
+        "bn": [
+          "আপেল",
+          "সবুজ পাতা",
+          "পদ্ম",
+          "মাস্ক"
+        ]
+      },
+      "search_aliases": [
+        "Nautica Voyage",
+        "নটিকা ভয়েজ",
+        "Nautica",
+        "নটিকা"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-017-EDT-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://buyperfumeinbangladesh.com/product/nautica-voyage-edt-for-men/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 2700,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://buyperfumeinbangladesh.com/product/nautica-voyage-edt-for-men/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-018",
+      "slug": "carolina-herrera-good-girl-edp",
+      "name": {
+        "en": "Carolina Herrera Good Girl",
+        "bn": "ক্যারোলিনা হেরেরা গুড গার্ল"
+      },
+      "brand": {
+        "en": "Carolina Herrera",
+        "bn": "ক্যারোলিনা হেরেরা"
+      },
+      "concentration": "EDP",
+      "audience": "women",
+      "description": {
+        "en": "A women's Eau de Parfum balancing almond and white flowers with a warm tonka-cocoa base.",
+        "bn": "কাঠবাদাম ও সাদা ফুলের ঘ্রাণের সঙ্গে উষ্ণ টঙ্কা-কোকোর বেস নিয়ে নারীদের ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Warm floral",
+        "bn": "উষ্ণ ফুলের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Almond",
+          "Tuberose",
+          "Jasmine",
+          "Tonka bean",
+          "Cocoa"
+        ],
+        "bn": [
+          "কাঠবাদাম",
+          "রজনীগন্ধা",
+          "জুঁই",
+          "টঙ্কা বিন",
+          "কোকো"
+        ]
+      },
+      "search_aliases": [
+        "Carolina Herrera Good Girl",
+        "ক্যারোলিনা হেরেরা গুড গার্ল",
+        "Carolina Herrera",
+        "ক্যারোলিনা হেরেরা"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-018-EDP-80",
+          "volume_ml": 80,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://sundora.com.bd/products/good-girl-eau-de-parfum",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 11900,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://sundora.com.bd/products/good-girl-eau-de-parfum"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-019",
+      "slug": "versace-bright-crystal-edt",
+      "name": {
+        "en": "Versace Bright Crystal",
+        "bn": "ভারসাচে ব্রাইট ক্রিস্টাল"
+      },
+      "brand": {
+        "en": "Versace",
+        "bn": "ভারসাচে"
+      },
+      "concentration": "EDT",
+      "audience": "women",
+      "description": {
+        "en": "A women's Eau de Toilette pairing bright fruit with fresh floral notes and a soft musky base.",
+        "bn": "উজ্জ্বল ফল ও সতেজ ফুলের ঘ্রাণের সঙ্গে কোমল মাস্কের বেস নিয়ে নারীদের ইডিটি।"
+      },
+      "scent_profile": {
+        "en": "Fresh fruity floral",
+        "bn": "সতেজ ফলের ও ফুলের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Yuzu",
+          "Pomegranate",
+          "Peony",
+          "Lotus"
+        ],
+        "bn": [
+          "ইউজু",
+          "ডালিম",
+          "পিওনি",
+          "পদ্ম"
+        ]
+      },
+      "search_aliases": [
+        "Versace Bright Crystal",
+        "ভারসাচে ব্রাইট ক্রিস্টাল",
+        "Versace",
+        "ভারসাচে"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-019-EDT-90",
+          "volume_ml": 90,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://perfumehousebd.com/shop/versace-bright-crystal-edt-90-ml-for-women/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 7400,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer listing does not establish this store's inventory.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://perfumehousebd.com/shop/versace-bright-crystal-edt-90-ml-for-women/"
+      }
+    },
+    {
+      "catalog_id": "BD-PF-020",
+      "slug": "dior-jadore-edp",
+      "name": {
+        "en": "Dior J'adore",
+        "bn": "ডিওর জাদোর"
+      },
+      "brand": {
+        "en": "Dior",
+        "bn": "ডিওর"
+      },
+      "concentration": "EDP",
+      "audience": "women",
+      "description": {
+        "en": "A floral women's Eau de Parfum with ylang-ylang, rose and jasmine at its center.",
+        "bn": "ইলাং-ইলাং, গোলাপ ও জুঁইয়ের সমন্বয়ে ফুলের ঘ্রাণপ্রধান নারীদের ইডিপি।"
+      },
+      "scent_profile": {
+        "en": "Floral",
+        "bn": "ফুলের ঘ্রাণ"
+      },
+      "key_notes": {
+        "en": [
+          "Ylang-ylang",
+          "Rose",
+          "Jasmine"
+        ],
+        "bn": [
+          "ইলাং-ইলাং",
+          "গোলাপ",
+          "জুঁই"
+        ]
+      },
+      "search_aliases": [
+        "Dior J'adore",
+        "ডিওর জাদোর",
+        "Dior",
+        "ডিওর"
+      ],
+      "suggested_variants": [
+        {
+          "sku": "SEED-020-EDP-100",
+          "volume_ml": 100,
+          "format": "full_bottle",
+          "selling_price_minor": null,
+          "cost_price_minor": null,
+          "stock_quantity": 0,
+          "image_path": null
+        }
+      ],
+      "publication_status": "draft",
+      "customer_reviews": [],
+      "average_rating": null,
+      "reference": {
+        "retailer_product_url": "https://perfumeshop.com.bd/shop/dior-jadore-edp/",
+        "researched_on": "2026-10-26",
+        "price_currency": "BDT",
+        "price_bdt_for_suggested_size": 17521,
+        "price_range_bdt": null,
+        "displayed_price_without_verified_size_mapping_bdt": null,
+        "price_scope": "Retailer lists a full-bottle price for the suggested size; reference only, not this store's selling price.",
+        "stock_statement": "Retailer page explicitly marked out of stock.",
+        "verification": "Public retailer listing; not independently verified against manufacturer or supplier.",
+        "image_source_page": "https://perfumeshop.com.bd/shop/dior-jadore-edp/"
+      }
+    }
+  ],
+  "cursor_followup_prompt": "Update the existing public storefront using https://perfumecenter.com.bd/ as the primary visual and interaction reference. Inspect its homepage, shop and product pages before implementing.\n\nFollow its compact header, wide promotional banner, image-based category tiles, rounded product cards, product collections, filter sidebar, cart drawer and large product-detail layout. Use white/light-gray surfaces, charcoal typography and deep magenta accents. Create original branding and use merchant-approved imagery.\n\nPreserve the current Laravel/React/Inertia backend, administration, payments and inventory logic. Connect every visible control to working application behavior. Adapt navigation to our actual catalog and use BDT consistently.\n\nProvide complete English/Bangla support for navigation, product content, search, filters, cart, checkout, validation and notifications. Switching language must preserve the current page, selected variant and cart. Use the 20 perfumes from this JSON, including Dior Sauvage and Rasasi Hawas, and follow its draft-import rules. Retailer reference prices must not become live selling prices automatically.\n\nMake banners, category images, homepage collections and business details editable from administration. Render reviews, discounts, availability and delivery information from real store data. Ensure responsive layouts, readable Bangla, accessible controls and optimized images. Verify the shopping flow and production build, and report changed files and remaining merchant inputs.",
+  "primary_frontend_reference": {
+    "name": "Perfume Center",
+    "url": "https://perfumecenter.com.bd/",
+    "reviewed_pages": [
+      "https://perfumecenter.com.bd/",
+      "https://perfumecenter.com.bd/shop/",
+      "https://perfumecenter.com.bd/product/french-avenue-cocoa-morado-edp/"
+    ],
+    "review_scope": "Desktop screenshots and public DOM inspected for homepage, shop and a product detail page; empty cart drawer opened. No order was submitted. Mobile viewport behavior and checkout completion were not tested.",
+    "homepage_patterns": [
+      "Compact white header with category navigation and search/account/cart controls",
+      "Wide promotional artwork",
+      "Circular category imagery inside raised tiles",
+      "New-arrival, popular-product and trending sections",
+      "Reviews, service information and a multi-column footer"
+    ],
+    "shop_patterns": [
+      "Magenta page-title banner",
+      "Desktop filter sidebar",
+      "Sorting controls and four-column desktop card layout",
+      "Pale-gray rounded cards with white image areas"
+    ],
+    "product_patterns": [
+      "Large left-hand product image with right-hand purchasing information",
+      "Magenta pricing and prominent purchase controls",
+      "Size selector and quantity stepper",
+      "Cash-on-delivery shortcut and messaging links",
+      "Expandable policy/note sections and related products"
+    ],
+    "adaptation_rules": [
+      "Use original branding and merchant-provided images and text.",
+      "Use the existing Laravel/React/Inertia architecture.",
+      "Keep the launch focused on the 20 selected perfumes; navigation categories must correspond to actual catalog data.",
+      "Support the full journey in English and Bangla.",
+      "Use BDT consistently in filters, product cards and checkout.",
+      "Derive ratings, discounts, inventory, shipping thresholds and delivery information from real store data.",
+      "Treat sales-ranking sections as Featured until supported by real sales data.",
+      "Messaging links must use the merchant configured phone/page and correct product URL."
+    ]
+  },
+  "cursor_public_frontend_prompt": "Update the existing public storefront using https://perfumecenter.com.bd/ as the primary visual and interaction reference. Inspect its homepage, shop and product pages before implementing.\n\nFollow its compact header, wide promotional banner, image-based category tiles, rounded product cards, product collections, filter sidebar, cart drawer and large product-detail layout. Use white/light-gray surfaces, charcoal typography and deep magenta accents. Create original branding and use merchant-approved imagery.\n\nPreserve the current Laravel/React/Inertia backend, administration, payments and inventory logic. Connect every visible control to working application behavior. Adapt navigation to our actual catalog and use BDT consistently.\n\nProvide complete English/Bangla support for navigation, product content, search, filters, cart, checkout, validation and notifications. Switching language must preserve the current page, selected variant and cart. Use the 20 perfumes from this JSON, including Dior Sauvage and Rasasi Hawas, and follow its draft-import rules. Retailer reference prices must not become live selling prices automatically.\n\nMake banners, category images, homepage collections and business details editable from administration. Render reviews, discounts, availability and delivery information from real store data. Ensure responsive layouts, readable Bangla, accessible controls and optimized images. Verify the shopping flow and production build, and report changed files and remaining merchant inputs."
+}

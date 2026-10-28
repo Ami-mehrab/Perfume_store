@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <rect width="800" height="800" fill="#f4f4f5"/>
+        <rect x="120" y="130" width="280" height="520" rx="6" fill="#5e6b52"/>
+    <rect x="120" y="130" width="36" height="520" fill="#36432a" opacity="0.45"/>
+    <text x="260" y="250" text-anchor="middle" fill="#fff" font-size="20" font-family="Georgia, serif">Vetiver Rain</text>
+    <rect x="430" y="226" width="170" height="400" rx="14" fill="#95a289" stroke="#36432a" stroke-width="6"/>
+    <rect x="475" y="146" width="80" height="90" rx="6" fill="#4f5c43"/>
+</svg>

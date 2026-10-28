@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <rect width="800" height="800" fill="#f4f4f5"/>
+        <rect x="120" y="130" width="280" height="520" rx="6" fill="#9d174d"/>
+    <rect x="120" y="130" width="36" height="520" fill="#750025" opacity="0.45"/>
+    <text x="260" y="250" text-anchor="middle" fill="#fff" font-size="20" font-family="Georgia, serif">Versace Eros</text>
+    <rect x="430" y="220" width="170" height="400" rx="14" fill="#d44e84" stroke="#750025" stroke-width="6"/>
+    <rect x="475" y="140" width="80" height="90" rx="6" fill="#8e083e"/>
+</svg>

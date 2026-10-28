@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <rect width="800" height="800" fill="#f4f4f5"/>
+        <rect x="300" y="150" width="200" height="470" rx="18" fill="#d44e84" stroke="#750025" stroke-width="8"/>
+    <rect x="345" y="70" width="110" height="90" rx="8" fill="#8e083e"/>
+    <rect x="330" y="280" width="140" height="160" fill="#9d174d"/>
+    <text x="400" y="360" text-anchor="middle" fill="#fff" font-size="22" font-family="Georgia, serif">Versace Dylan Blue Pou</text>
+</svg>

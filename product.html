@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="bn" class="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <script>
+            (function() {
+                const appearance = 'system';
+
+                if (appearance === 'system') {
+                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+                    if (prefersDark) {
+                        document.documentElement.classList.add('dark');
+                    }
+                }
+            })();
+        </script>
+
+        
+        <style>
+            html {
+                background-color: oklch(1 0 0);
+            }
+
+            html.dark {
+                background-color: oklch(0.145 0 0);
+            }
+        </style>
+
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+        <link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/8de24fe577dd70ce.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/6bdd0196f7ba2eff.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/d46ed8f74eaaa316.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/e7b6615f3b4fbf7f.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/f83f947d26bdc42a.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/b8786d88e1ff3ad5.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/ba2c23cd04003fde.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/91c29b9d037431a1.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/b1ee362db64ebd30.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/ed0aa21d2d47ff83.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/e123908fb02a9743.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/0e6928f6d4a4537a.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/26237f7fe550ed3e.woff2" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" as="font" href="http://[::1]:5174/__laravel_vite_plugin__/fonts/d6038a0a8c3dadb7.woff2" type="font/woff2" crossorigin="anonymous" />
+<style>
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/8de24fe577dd70ce.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/792a726d8c6d8649.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/6bdd0196f7ba2eff.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/d7736859f7e6c789.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/d46ed8f74eaaa316.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/33bfe117ff605d86.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/e7b6615f3b4fbf7f.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/9380f7d9e7665f19.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/f83f947d26bdc42a.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/4fd043f433de3943.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/b8786d88e1ff3ad5.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/b62d2ae19bae2258.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/ba2c23cd04003fde.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/0381c7d95856b164.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/91c29b9d037431a1.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/0cbf90b20b7c968f.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/b1ee362db64ebd30.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/8094ca191f4d39b3.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/ed0aa21d2d47ff83.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/4e088c7e47008b3e.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/e123908fb02a9743.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/e4247c465a095a51.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/0e6928f6d4a4537a.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/362968badda4b4ce.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/26237f7fe550ed3e.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/1f4106e36697af26.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/d6038a0a8c3dadb7.woff2") format("woff2");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+  font-family: "Noto Sans Bengali";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("http://[::1]:5174/__laravel_vite_plugin__/fonts/12b05dfc7f95bdfe.woff") format("woff");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans";
+  --font-cormorant-garamond: "Cormorant Garamond";
+  --font-outfit: "Outfit";
+  --font-noto-sans-bengali: "Noto Sans Bengali";
+}
+
+.font-instrument-sans {
+  font-family: var(--font-instrument-sans);
+}
+
+.font-cormorant-garamond {
+  font-family: var(--font-cormorant-garamond);
+}
+
+.font-outfit {
+  font-family: var(--font-outfit);
+}
+
+.font-noto-sans-bengali {
+  font-family: var(--font-noto-sans-bengali);
+}
+</style>
+        <script type="module" >
+    import RefreshRuntime from 'http://[::1]:5174/@react-refresh'
+    RefreshRuntime.injectIntoGlobalHook(window)
+    window.$RefreshReg$ = () => {}
+    window.$RefreshSig$ = () => (type) => type
+    window.__vite_plugin_react_preamble_installed__ = true
+</script>        <script type="module" src="http://[::1]:5174/@vite/client"></script><link rel="stylesheet" href="http://[::1]:5174/resources/css/app.css" /><script type="module" src="http://[::1]:5174/resources/js/app.tsx"></script><script type="module" src="http://[::1]:5174/resources/js/pages/store/product.tsx"></script>        <meta name="description" content="Sandalwood smoked over black pepper, then softened with iris." data-inertia>
+<link rel="canonical" href="http://127.0.0.1:8000/products/noir-santal" data-inertia>
+<meta property="og:title" content="Noir Santal by Maison Aurelle" data-inertia>
+<meta property="og:description" content="Sandalwood smoked over black pepper, then softened with iris." data-inertia>
+<meta property="og:url" content="http://127.0.0.1:8000/products/noir-santal" data-inertia>
+<meta property="og:type" content="website" data-inertia>
+<script type="application/ld+json" data-inertia>{"@context":"https://schema.org","@type":"Product","name":"Noir Santal","description":"Sandalwood smoked over black pepper, then softened with iris.","brand":"Maison Aurelle","image":["/images/samples/noir-santal-1.svg","/images/samples/noir-santal-2.svg","/images/samples/noir-santal-3.svg"],"offers":[{"@type":"Offer","sku":"NOIRSANTAL-EDP-30","priceCurrency":"BDT","price":"3200.00","availability":"https://schema.org/InStock"},{"@type":"Offer","sku":"NOIRSANTAL-EDP-50","priceCurrency":"BDT","price":"4800.00","availability":"https://schema.org/InStock"},{"@type":"Offer","sku":"NOIRSANTAL-EXTRAIT-30","priceCurrency":"BDT","price":"6900.00","availability":"https://schema.org/InStock"}]}</script>
+<title data-inertia="">Noir Santal by Maison Aurelle - Aurelle</title>
+    </head>
+    <body class="font-sans antialiased">
+        <script data-page="app" type="application/json">{"component":"store\/product","props":{"errors":{},"name":"Aurelle","auth":{"user":null},"sidebarOpen":true,"store":{"name":"Aurelle","tagline":"আস্তে করে তৈরি সুগন্ধি","announcement":"প্রতিটি বোতলের সাথে ফ্রি স্যাম্পল","currency_code":"BDT","currency_symbol":"৳","currency_decimals":2,"delivery_estimate":"২–৫ কার্যদিবস","default_country":"Bangladesh","contact_email":"hello@aurelle.test","contact_phone":"+880 1700 000000","address":"House 12, Road 4, Gulshan, Dhaka","about":"অরেল একটি শান্ত সুগন্ধির ঘর। কাঠ, রেজিন, ফুল ও সাইট্রাস ছোট ব্যাচে বোতলজাত হয়, আর আপনি সেগুলো নিজের মতো পরেন।","meta_description":"অরেল পারফিউম কিনুন। ছোট ব্যাচের সুগন্ধি, সারা বাংলাদেশে ডেলিভারি।","instagram_url":"","whatsapp_phone":"+880 1700 000000","messenger_url":"","warranty_text":"সিল করা বোতল ক্ষতিগ্রস্ত অবস্থায় পৌঁছালে বদলে দেওয়া হয়। ডেলিভারির ৩ দিনের মধ্যে পার্সেলের ছবিসহ যোগাযোগ করুন।","returns_text":"না-খোলা বোতল ৭ দিনের মধ্যে ফেরত দেওয়া যায়। খোলা পারফিউম ফেরত হয় না।","cod_enabled":true,"online_payments_enabled":true,"free_shipping_over_cents":500000,"shipping_flat_cents":12000,"shipping_inside_cents":8000,"shipping_outside_cents":15000},"cartCount":0,"cart":{"items":[],"quote":{"subtotal_cents":0,"discount_cents":0,"shipping_cents":8000,"total_cents":8000,"coupon_code":null,"coupon_error":null,"shipping_zone":"inside"}},"locale":"bn","wishlistIds":[],"sections":[{"name":"Men","name_bn":"পুরুষ","slug":"men","audience":"masculine","image":"http:\/\/localhost:8000\/storage\/sections\/xgqYrMV2OAWv33QGWATR2OMkvupCrmGJSuTgATBr.png"},{"name":"Women","name_bn":"নারী","slug":"women","audience":"feminine","image":"http:\/\/localhost:8000\/storage\/sections\/n0f8M37Qvb3LtmsvbXuvNUMkckvJuV7EP4fvuIoR.png"},{"name":"Unisex","name_bn":"উভয়","slug":"unisex","audience":"unisex","image":"http:\/\/localhost:8000\/storage\/sections\/UNqKZ37Z25FMXECFSQfWeOpE9Lmp6djeJ22e7Rfk.png"},{"name":"Kids","name_bn":null,"slug":"kids","audience":"all","image":"http:\/\/localhost:8000\/storage\/sections\/gOTaJn0lQTjwPQ99uURv4iuzS41ZFNi5daVsxZWE.png"}],"product":{"id":1,"name":"Noir Santal","name_bn":"নোয়ার স্যান্ডাল","slug":"noir-santal","swatch":"#6b3f2a","family":"woody","gender":"unisex","brand":"Maison Aurelle","collection":"The Signature","image":"\/images\/samples\/noir-santal-1.svg","image_alt":"Noir Santal photo 1","variant_id":1,"price_cents":320000,"compare_at_cents":null,"in_stock":true,"description":"Sandalwood smoked over black pepper, then softened with iris.","description_bn":"কালো মরিচের ওপর ধোঁয়াটে চন্দন, তারপর আইরিসের নরম ছোঁয়া।","story":"An evening wood that stays close to the skin. Composed for people who prefer a trail to a shout.","top_notes":["Bergamot","Black pepper"],"heart_notes":["Sandalwood","Iris"],"base_notes":["Cedar","Amber"],"images":[{"id":1,"url":"\/images\/samples\/noir-santal-1.svg","alt":"Noir Santal photo 1"},{"id":2,"url":"\/images\/samples\/noir-santal-2.svg","alt":"Noir Santal photo 2"},{"id":3,"url":"\/images\/samples\/noir-santal-3.svg","alt":"Noir Santal photo 3"}],"variants":[{"id":1,"concentration":"edp","concentration_label":"Eau de Parfum","size_ml":30,"sku":"NOIRSANTAL-EDP-30","price_cents":320000,"compare_at_cents":null,"stock":10,"is_active":true,"in_stock":true,"label":"Eau de Parfum · 30 ml"},{"id":2,"concentration":"edp","concentration_label":"Eau de Parfum","size_ml":50,"sku":"NOIRSANTAL-EDP-50","price_cents":480000,"compare_at_cents":null,"stock":14,"is_active":true,"in_stock":true,"label":"Eau de Parfum · 50 ml"},{"id":3,"concentration":"extrait","concentration_label":"Extrait de Parfum","size_ml":30,"sku":"NOIRSANTAL-EXTRAIT-30","price_cents":690000,"compare_at_cents":null,"stock":5,"is_active":true,"in_stock":true,"label":"Extrait de Parfum · 30 ml"}]},"related":[{"id":6,"name":"Vetiver Rain","name_bn":"ভেটিভার রেইন","slug":"vetiver-rain","swatch":"#5e6b52","family":"woody","gender":"masculine","brand":"Cèdre Studio","collection":"First Light","image":"\/images\/samples\/vetiver-rain-1.svg","image_alt":"Vetiver Rain photo 1","variant_id":14,"price_cents":380000,"compare_at_cents":null,"in_stock":true},{"id":8,"name":"Bergamot Hour","name_bn":"বার্গামট আওয়ার","slug":"bergamot-hour","swatch":"#d9b56a","family":"fresh","gender":"unisex","brand":"Maison Aurelle","collection":"The Signature","image":"\/images\/samples\/bergamot-hour-1.svg","image_alt":"Bergamot Hour photo 1","variant_id":19,"price_cents":360000,"compare_at_cents":null,"in_stock":true}],"seo":{"title":"Noir Santal by Maison Aurelle","description":"Sandalwood smoked over black pepper, then softened with iris.","canonical":"http:\/\/127.0.0.1:8000\/products\/noir-santal"},"jsonLd":{"@context":"https:\/\/schema.org","@type":"Product","name":"Noir Santal","description":"Sandalwood smoked over black pepper, then softened with iris.","brand":"Maison Aurelle","image":["\/images\/samples\/noir-santal-1.svg","\/images\/samples\/noir-santal-2.svg","\/images\/samples\/noir-santal-3.svg"],"offers":[{"@type":"Offer","sku":"NOIRSANTAL-EDP-30","priceCurrency":"BDT","price":"3200.00","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","sku":"NOIRSANTAL-EDP-50","priceCurrency":"BDT","price":"4800.00","availability":"https:\/\/schema.org\/InStock"},{"@type":"Offer","sku":"NOIRSANTAL-EXTRAIT-30","priceCurrency":"BDT","price":"6900.00","availability":"https:\/\/schema.org\/InStock"}]}},"url":"\/products\/noir-santal","version":"25dcc9cf6546bafce229910f4c84a968","sharedProps":["errors","name","auth","sidebarOpen","store","cartCount","cart","locale","wishlistIds","sections"]}</script><div data-server-rendered="true" id="app"><link rel="preload" as="image" href="/images/samples/noir-santal-1.svg"/><link rel="preload" as="image" href="/images/samples/noir-santal-2.svg"/><link rel="preload" as="image" href="/images/samples/noir-santal-3.svg"/><div class="store-shell min-h-screen"><a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 focus:bg-charcoal focus:px-3 focus:py-2 focus:text-ivory">মূল অংশে যান</a><div class="bg-charcoal px-4 py-2 text-center text-[11px] tracking-[0.22em] text-ivory uppercase">প্রতিটি বোতলের সাথে ফ্রি স্যাম্পল</div><header class="sticky top-0 z-40 border-b border-line bg-white"><div class="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4"><button type="button" class="md:hidden" aria-label="মেনু খুলুন"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu size-5"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><a class="text-lg font-semibold tracking-wide text-bronze" href="/">Aurelle</a><nav class="hidden items-center gap-8 md:flex" aria-label="Primary"><a class="text-[11px] tracking-[0.2em] uppercase hover:text-bronze" href="/">হোম</a><a class="text-[11px] tracking-[0.2em] uppercase hover:text-bronze" href="/collections/men">পুরুষ</a><a class="text-[11px] tracking-[0.2em] uppercase hover:text-bronze" href="/collections/women">নারী</a><a class="text-[11px] tracking-[0.2em] uppercase hover:text-bronze" href="/collections/unisex">উভয়</a><a class="text-[11px] tracking-[0.2em] uppercase hover:text-bronze" href="/collections/kids">Kids</a><a class="text-[11px] tracking-[0.2em] uppercase hover:text-bronze" href="/shop">শপ</a></nav><div class="flex items-center gap-3 md:gap-4"><div class="flex items-center gap-1 text-[11px] tracking-[0.12em]" aria-label="ভাষা"><button type="button" aria-pressed="false" class="text-stone">EN</button><span class="text-stone" aria-hidden="true">/</span><button type="button" aria-pressed="true" class="text-charcoal">বাংলা</button></div><button type="button" aria-label="সুগন্ধি খুঁজুন"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search size-5"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button><a aria-label="উইশলিস্ট" class="relative" href="/wishlist"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart size-5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg></a><button type="button" aria-label="ব্যাগ" class="relative hidden md:inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag size-5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg></button><a class="inline-flex items-center gap-1.5 text-sm" aria-label="সাইন ইন" href="/account"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round size-5"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg><span class="hidden md:inline">সাইন ইন</span></a></div></div></header><main id="main"><div class="bg-white"><div class="mx-auto max-w-6xl px-4 py-6"><p class="text-sm text-stone"><a href="/">হোম</a><span class="px-2">/</span><a href="/shop">শপ</a><span class="px-2">/</span><span>নোয়ার স্যান্ডাল</span></p><div class="mt-6 grid gap-10 md:grid-cols-2"><div><div class="aspect-square overflow-hidden rounded-2xl bg-[#f3f4f6]"><img src="/images/samples/noir-santal-1.svg" alt="Noir Santal photo 1" class="h-full w-full object-contain p-6"/></div><div class="mt-4 flex items-center gap-2"><button type="button" class="grid size-9 shrink-0 place-items-center text-stone" aria-label="Previous photo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left size-5"><path d="m15 18-6-6 6-6"></path></svg></button><div class="flex min-w-0 flex-1 justify-center gap-3"><button type="button" aria-label="Noir Santal photo 1" class="size-20 shrink-0 overflow-hidden rounded-xl border-2 bg-[#f3f4f6] border-[#db2777]"><img src="/images/samples/noir-santal-1.svg" alt="" class="h-full w-full object-contain p-1"/></button><button type="button" aria-label="Noir Santal photo 2" class="size-20 shrink-0 overflow-hidden rounded-xl border-2 bg-[#f3f4f6] border-transparent"><img src="/images/samples/noir-santal-2.svg" alt="" class="h-full w-full object-contain p-1"/></button><button type="button" aria-label="Noir Santal photo 3" class="size-20 shrink-0 overflow-hidden rounded-xl border-2 bg-[#f3f4f6] border-transparent"><img src="/images/samples/noir-santal-3.svg" alt="" class="h-full w-full object-contain p-1"/></button></div><button type="button" class="grid size-9 shrink-0 place-items-center text-stone" aria-label="Next photo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right size-5"><path d="m9 18 6-6-6-6"></path></svg></button></div></div><div><h1 class="text-3xl font-semibold tracking-tight text-charcoal md:text-4xl">নোয়ার স্যান্ডাল</h1><p class="mt-1 text-stone">Noir Santal</p><p class="mt-3 text-sm text-stone">এখনও কোনো রিভিউ নেই</p><p class="mt-4 text-2xl font-semibold text-bronze">৳3,200.00</p><div class="mt-6"><p class="text-sm font-medium">সাইজ</p><div class="mt-3 flex flex-wrap gap-3"><button type="button" aria-pressed="true" class="min-w-24 rounded-lg border-2 px-5 py-3 text-sm font-semibold tracking-wide border-charcoal bg-white disabled:opacity-40">30<!-- -->ML<!-- --> Eau de Parfum</button><button type="button" aria-pressed="false" class="min-w-24 rounded-lg border-2 px-5 py-3 text-sm font-semibold tracking-wide border-transparent bg-[#f3f4f6] disabled:opacity-40">50<!-- -->ML</button><button type="button" aria-pressed="false" class="min-w-24 rounded-lg border-2 px-5 py-3 text-sm font-semibold tracking-wide border-transparent bg-[#f3f4f6] disabled:opacity-40">30<!-- -->ML<!-- --> Extrait de Parfum</button></div></div><div class="mt-4 flex flex-wrap items-center gap-3"><div class="inline-flex items-center rounded-full border border-line"><button type="button" class="px-3 py-2" aria-label="Less"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus size-4"><path d="M5 12h14"></path></svg></button><span class="min-w-8 text-center text-sm">1</span><button type="button" class="px-3 py-2" aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus size-4"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></button></div><button type="button" class="rounded-full bg-[#c45c86] px-8 py-3 text-sm font-medium text-white disabled:opacity-40">ব্যাগে যোগ করুন</button></div><button type="button" class="mt-3 w-full rounded-md bg-[#ff2d6a] py-3 text-sm font-semibold text-white disabled:opacity-40">এখনই অর্ডার করুন · ক্যাশ অন ডেলিভারি</button><div class="mt-3 grid gap-3 sm:grid-cols-2"><a class="rounded-md bg-[#25D366] py-3 text-center text-sm font-semibold text-white" href="https://wa.me/8801700000000?text=%E0%A6%A8%E0%A7%8B%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0%20%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BE%E0%A6%B2%2030%20ml" target="_blank" rel="noreferrer">Chat on WhatsApp</a></div><button type="button" class="mt-4 text-sm underline">উইশলিস্টে যোগ করুন</button><dl class="mt-6 space-y-1 text-sm text-stone"><div>SKU: <span class="text-charcoal">NOIRSANTAL-EDP-30</span></div><div>কাদের জন্য<!-- -->: <span class="text-charcoal">উভয়</span></div><div>ব্র্যান্ড<!-- -->: <span class="text-charcoal">Maison Aurelle</span></div><div>স্টক<!-- -->: <span class="text-charcoal">10</span></div></dl><div class="mt-6 divide-y divide-line border-y border-line text-sm"><details class="py-3"><summary class="cursor-pointer font-medium">ওয়ারেন্টি</summary><p class="mt-2 leading-6 text-stone">সিল করা বোতল ক্ষতিগ্রস্ত অবস্থায় পৌঁছালে বদলে দেওয়া হয়। ডেলিভারির ৩ দিনের মধ্যে পার্সেলের ছবিসহ যোগাযোগ করুন।</p></details><details class="py-3"><summary class="cursor-pointer font-medium">শিপিং ও ফেরত</summary><p class="mt-2 leading-6 text-stone">২–৫ কার্যদিবস<!-- -->. <!-- -->না-খোলা বোতল ৭ দিনের মধ্যে ফেরত দেওয়া যায়। খোলা পারফিউম ফেরত হয় না।</p></details><details class="py-3" open=""><summary class="cursor-pointer font-medium">ঘ্রাণের নোট</summary><p class="mt-2 leading-6 text-stone">Bergamot, Black pepper, Sandalwood, Iris, Cedar, Amber</p></details></div></div></div><div class="mt-12 border-b border-line"><button type="button" class="mr-6 border-b-2 pb-3 text-sm border-charcoal font-semibold">বর্ণনা</button><button type="button" class="border-b-2 pb-3 text-sm border-transparent text-stone">অতিরিক্ত তথ্য</button></div><div class="max-w-3xl py-6 text-sm leading-7">কালো মরিচের ওপর ধোঁয়াটে চন্দন, তারপর আইরিসের নরম ছোঁয়া।</div></div><section class="mx-auto max-w-6xl px-4 py-10"><h2 class="mb-6 text-center text-2xl font-semibold">আপনার পছন্দ হতে পারে</h2><div class="grid grid-cols-2 gap-4 md:grid-cols-4"><article class="group overflow-hidden rounded-2xl border border-line bg-white shadow-sm"><a class="block" href="/products/vetiver-rain"><div class="relative aspect-[4/5] overflow-hidden bg-[#f3f4f6]"><img src="/images/samples/vetiver-rain-1.svg" alt="Vetiver Rain photo 1" class="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]" loading="lazy" decoding="async"/></div><div class="space-y-1 p-3"><p class="text-xs text-stone">Cèdre Studio</p><h3 class="text-base leading-snug font-semibold text-charcoal">ভেটিভার রেইন</h3><p class="text-sm text-stone">Vetiver Rain</p><p class="text-sm font-semibold text-bronze">৳3,800.00</p></div></a><a class="mx-3 mb-3 block rounded-md bg-[#1f2937] py-2 text-center text-sm text-white" href="/products/vetiver-rain">সাইজ দেখুন</a></article><article class="group overflow-hidden rounded-2xl border border-line bg-white shadow-sm"><a class="block" href="/products/bergamot-hour"><div class="relative aspect-[4/5] overflow-hidden bg-[#f3f4f6]"><img src="/images/samples/bergamot-hour-1.svg" alt="Bergamot Hour photo 1" class="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]" loading="lazy" decoding="async"/></div><div class="space-y-1 p-3"><p class="text-xs text-stone">Maison Aurelle</p><h3 class="text-base leading-snug font-semibold text-charcoal">বার্গামট আওয়ার</h3><p class="text-sm text-stone">Bergamot Hour</p><p class="text-sm font-semibold text-bronze">৳3,600.00</p></div></a><a class="mx-3 mb-3 block rounded-md bg-[#1f2937] py-2 text-center text-sm text-white" href="/products/bergamot-hour">সাইজ দেখুন</a></article></div></section></div></main><footer class="mt-16 bg-[#111] text-white "><div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-4"><div><p class="text-lg font-semibold text-[#f472b6]">Aurelle</p><p class="mt-3 max-w-xs text-sm leading-6 text-white/70">অরেল একটি শান্ত সুগন্ধির ঘর। কাঠ, রেজিন, ফুল ও সাইট্রাস ছোট ব্যাচে বোতলজাত হয়, আর আপনি সেগুলো নিজের মতো পরেন।</p></div><div class="text-sm leading-7"><p class="font-semibold">সেকশন</p><a class="block text-white/70" href="/collections/men">পুরুষ</a><a class="block text-white/70" href="/collections/women">নারী</a><a class="block text-white/70" href="/collections/unisex">উভয়</a><a class="block text-white/70" href="/collections/kids">Kids</a></div><div class="text-sm leading-7"><p class="font-semibold">কাস্টমার সেবা</p><a class="block text-white/70" href="/orders/track">অর্ডার ট্র্যাক</a><p class="text-white/70">২–৫ কার্যদিবস</p><p class="text-white/70">না-খোলা বোতল ৭ দিনের মধ্যে ফেরত দেওয়া যায়। খোলা পারফিউম ফেরত হয় না।</p></div><div class="text-sm leading-7"><p class="font-semibold">যোগাযোগ</p><p class="text-white/70">House 12, Road 4, Gulshan, Dhaka</p><p class="text-white/70">+880 1700 000000</p><a class="text-white/70" href="mailto:hello@aurelle.test">hello@aurelle.test</a></div></div></footer></div></div>
+    <script data-inertia-devtools-id type="application/json">"01M5VN4VVD1C2H08KEXVXQARHB"</script></body>
+</html>

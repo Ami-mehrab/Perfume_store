@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+    <rect width="800" height="800" fill="#f4f4f5"/>
+        <rect x="250" y="220" width="300" height="390" rx="16" fill="#d44e84" stroke="#750025" stroke-width="8"/>
+    <rect x="320" y="90" width="160" height="140" rx="10" fill="#8e083e"/>
+    <circle cx="400" cy="150" r="28" fill="#9d174d"/>
+    <text x="400" y="430" text-anchor="middle" fill="#750025" font-size="22" font-family="Georgia, serif">Afnan 9 PM</text>
+</svg>
