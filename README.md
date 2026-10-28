@@ -88,4 +88,4 @@ Server-side logic handles prices, delivery, coupons, and stock.
 
 ## Docs
 
-- **[User Guide](docs/USER_GUIDE.md)** — image sizes, admin overview, everyday tips
+- **[User Guide (DOCX)](docs/Perfume_Store_User_Guide.docx)** — image upload sizes, admin overview, everyday tips (open in Word / Google Docs)
